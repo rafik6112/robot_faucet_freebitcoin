@@ -10,7 +10,7 @@ freebitcoin = webdriver.Chrome()
 
 freebitcoin.get("https://freebitco.in/")
 
-## Attendre jusqu'à ce que l'élément de bannière apparaisse (no thanks, allow) (timeout de 10 secondes)
+## Attendre jusqu'à ce que l'élément de bannière apparaisse (no thanks, allow) (timeout de 10 secondes)#
 def pass_banner(xpath):
     wait = WebDriverWait(freebitcoin, 10)
     no_thanks_banner_home = wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
